@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>22 Useful Bash Shell Aliases for Linux | AdminPenguin</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="22 Useful Bash Shell Aliases for Linux">
+<meta name="author" content="Admin Penguin">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="This post shows how to create and use aliases including 22 practical examples of bash shell aliases.">
+<meta property="og:description" content="This post shows how to create and use aliases including 22 practical examples of bash shell aliases.">
+<link rel="canonical" href="http://10.20.10.88:4000/linux/2023/03/24/22-bash-shell-aliases.html">
+<meta property="og:url" content="http://10.20.10.88:4000/linux/2023/03/24/22-bash-shell-aliases.html">
+<meta property="og:site_name" content="AdminPenguin">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-03-24T00:00:00+01:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="22 Useful Bash Shell Aliases for Linux">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Admin Penguin"},"dateModified":"2023-03-24T00:00:00+01:00","datePublished":"2023-03-24T00:00:00+01:00","description":"This post shows how to create and use aliases including 22 practical examples of bash shell aliases.","headline":"22 Useful Bash Shell Aliases for Linux","mainEntityOfPage":{"@type":"WebPage","@id":"http://10.20.10.88:4000/linux/2023/03/24/22-bash-shell-aliases.html"},"url":"http://10.20.10.88:4000/linux/2023/03/24/22-bash-shell-aliases.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/banners/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://10.20.10.88:4000/feed.xml" title="AdminPenguin">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="AdminPenguin" src="/assets/images/banners/favicon-32x32.png" onerror="this.style.display='none'">
+  AdminPenguin
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/">HOME</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/tags.html">TAGS</a><a class="page-link" href="/about.html">ABOUT</a>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="sv">
+          
+          <img src="https://cdn.countryflags.com/thumbs/sweden/flag-400.png" title="Swedish">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    html .page-banner {
+      background: #000;
+    }
+  </style>
+<style>html .page-banner {
+      height:  25.76vh;
+      min-height: 38vh;
+    }
+    html[data-scroll-status="top"] .page-banner {
+      height: 70vh;
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-img > *:first-child {
+      opacity: 0.618;
+    }
+
+    html[data-theme="dark"] .page-banner .page-banner-img > *:first-child {
+      opacity: 0.443724;
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(1) {
+      font-size: 3em; font-weight: bold
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(2) {
+      color: #9580ff
+    }
+  </style>
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(https://images.unsplash.com/photo-1629654291663-b91ad427698f?ixlib)"></div>
+        <img class="img-placeholder" src="https://images.unsplash.com/photo-1629654291663-b91ad427698f?ixlib">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner">
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">22 Useful Bash Shell Aliases for Linux</h1>
+  <h2 class="post-subtitle">The power of Bash aliases!</h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2023-03-24T00:00:00+01:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Mar 24, 2023
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 11 mins</span>
+  </p>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#linux">#linux</a><a class="post-tag" href="/tags.html#bash">#bash</a>
+</div></header>
+</div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+     <img class="light" src="../../assets/images/sun-solid.svg" alt="Light theme icon" style="width: 22px; height: 22px;">
+     <img class="dark" src="../../assets/images/moon-solid.svg" alt="Dark theme icon" style="width: 22px; height: 22px;">
+<!-- <p class="light">Light</p> -->
+<!-- <p class="dark">Dark</p> -->
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('on' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>This post shows how to create and use aliases including 22 practical examples of bash shell aliases.</p>
+
+<h2 id="more-about-bash-shell-aliases">More about bash shell aliases</h2>
+<p>The general syntax for the alias command for the bash shell is as follows:</p>
+
+<h3 id="how-to-list-bash-aliases">How to list bash aliases</h3>
+<p>Type the following alias command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias</span>
+</code></pre></div></div>
+
+<p><strong>Sample outputs:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias</span> ..<span class="o">=</span><span class="s1">'cd ..'</span>
+<span class="nb">alias </span><span class="nv">amazonbackup</span><span class="o">=</span><span class="s1">'s3backup'</span>
+<span class="nb">alias </span>apt-get<span class="o">=</span><span class="s1">'sudo apt-get'</span>
+</code></pre></div></div>
+<p>By default alias command shows a list of aliases that are defined for the current user.</p>
+
+<h3 id="how-to-define-or-create-an-alias">How to define or create an alias</h3>
+<p>To create the alias use the following syntax:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">name</span><span class="o">=</span>value
+<span class="nb">alias </span><span class="nv">name</span><span class="o">=</span><span class="s1">'command'</span>
+<span class="nb">alias </span><span class="nv">name</span><span class="o">=</span><span class="s1">'command arg1 arg2'</span>
+<span class="nb">alias </span><span class="nv">name</span><span class="o">=</span><span class="s1">'/path/to/script'</span>
+<span class="nb">alias </span><span class="nv">name</span><span class="o">=</span><span class="s1">'/path/to/script.pl arg1'</span>
+</code></pre></div></div>
+
+<p>In this example, create the alias c for the commonly used clear command, which clears the screen, by typing the following command and then pressing the ENTER key:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">c</span><span class="o">=</span><span class="s1">'clear'</span>
+</code></pre></div></div>
+
+<p>Then, to clear the screen, instead of typing clear, you would only have to type the letter <code class="language-plaintext highlighter-rouge">c</code> and press the [ENTER] key.</p>
+
+<h3 id="how-to-disable-a-bash-alias-temporarily">How to disable a bash alias temporarily</h3>
+<p>An alias can be disabled temporarily using the following syntax:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## path/to/full/command ##</span>
+/usr/bin/clear
+<span class="c">## call alias with a backslash ##</span>
+<span class="se">\c</span>
+<span class="c">## use /bin/ls command and avoid ls alias ##</span>
+<span class="nb">command ls</span>
+</code></pre></div></div>
+
+<h3 id="how-to-deleteremove-a-bash-alias">How to delete/remove a bash alias</h3>
+<p>You need to use the command called unalias to remove aliases. Its syntax is as follows:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">unalias </span>aliasname
+<span class="nb">unalias </span>foo
+</code></pre></div></div>
+
+<p>In this example, remove the alias c which was created in an earlier example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">unalias </span>c
+</code></pre></div></div>
+
+<p>You also need to delete the alias from the ~/.bashrc file using a text editor (see next section).</p>
+
+<h3 id="how-to-make-bash-shell-aliases-permanent">How to make bash shell aliases permanent</h3>
+<p>The alias c remains in effect only during the current login session. Once you logs out or reboot the system the alias c will be gone. To avoid this problem, add alias to your ~/.bashrc file, enter:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.bashrc
+</code></pre></div></div>
+
+<p>The alias <code class="language-plaintext highlighter-rouge">c</code> for the current user can be made permanent by entering the following line:
+<code class="language-plaintext highlighter-rouge">alias c='clear'</code></p>
+
+<p>Save and close the file. System-wide aliases (i.e. aliases for all users) can be put in the <code class="language-plaintext highlighter-rouge">/etc/bashrc</code> file. Please note that the alias command is built into a various shells including ksh, tcsh/csh, ash, bash and others.</p>
+
+<h2 id="30-bash-shell-aliases-exemples">30 bash shell aliases exemples</h2>
+<h3 id="1-control-ls-command-output">1. Control ls command output</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## Colorize the ls output ##</span>
+<span class="nb">alias ls</span><span class="o">=</span><span class="s1">'ls --color=auto'</span>
+ 
+<span class="c">## Use a long listing format ##</span>
+<span class="nb">alias </span><span class="nv">ll</span><span class="o">=</span><span class="s1">'ls -la'</span>
+ 
+<span class="c">## Show hidden files ##</span>
+<span class="nb">alias </span>l.<span class="o">=</span><span class="s1">'ls -d .* --color=auto'</span>
+</code></pre></div></div>
+
+<h3 id="2-control-cd-command-behavior">2. Control cd command behavior</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## get rid of command not found ##</span>
+<span class="nb">alias </span>cd..<span class="o">=</span><span class="s1">'cd ..'</span>
+ 
+<span class="c">## a quick way to get out of current directory ##</span>
+<span class="nb">alias</span> ..<span class="o">=</span><span class="s1">'cd ..'</span>
+<span class="nb">alias</span> ...<span class="o">=</span><span class="s1">'cd ../../../'</span>
+<span class="nb">alias</span> ....<span class="o">=</span><span class="s1">'cd ../../../../'</span>
+<span class="nb">alias</span> .....<span class="o">=</span><span class="s1">'cd ../../../../'</span>
+<span class="nb">alias</span> .4<span class="o">=</span><span class="s1">'cd ../../../../'</span>
+<span class="nb">alias</span> .5<span class="o">=</span><span class="s1">'cd ../../../../..'</span>
+</code></pre></div></div>
+
+<h3 id="3-control-grep-command-output">3. Control grep command output</h3>
+<p><code class="language-plaintext highlighter-rouge">grep</code> command is a command-line utility for searching plain-text files for lines matching a regular expression:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## Colorize the grep command output for ease of use (good for log files)##</span>
+<span class="nb">alias grep</span><span class="o">=</span><span class="s1">'grep --color=auto'</span>
+<span class="nb">alias </span><span class="nv">egrep</span><span class="o">=</span><span class="s1">'egrep --color=auto'</span>
+<span class="nb">alias </span><span class="nv">fgrep</span><span class="o">=</span><span class="s1">'fgrep --color=auto'</span>
+</code></pre></div></div>
+
+<h3 id="4-start-calculator-with-math-support">4. Start calculator with math support</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">bc</span><span class="o">=</span><span class="s1">'bc -l'</span>
+</code></pre></div></div>
+
+<h3 id="5-generate-sha1-digest">5. Generate sha1 digest</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">sha1</span><span class="o">=</span><span class="s1">'openssl sha1'</span>
+</code></pre></div></div>
+
+<h3 id="6-coclorize-diff-output">6. Coclorize diff output</h3>
+<p>You can compare files line by line using diff and use a tool called colordiff to colorize diff output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># install  colordiff package :)
+alias diff='colordiff'
+</code></pre></div></div>
+
+<h3 id="7-make-mount-command-output-pretty-and-readable">7. Make mount command output pretty and readable</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">mount</span><span class="o">=</span><span class="s1">'mount |column -t'</span>
+</code></pre></div></div>
+
+<h3 id="8-command-short-cuts-to-save-time">8. Command short cuts to save time</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># handy short cuts #</span>
+<span class="nb">alias </span><span class="nv">h</span><span class="o">=</span><span class="s1">'history'</span>
+<span class="nb">alias </span><span class="nv">j</span><span class="o">=</span><span class="s1">'jobs -l'</span>
+</code></pre></div></div>
+
+<h3 id="9-create-a-new-set-of-commands">9. Create a new set of commands</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">path</span><span class="o">=</span><span class="s1">'echo -e ${PATH//:/\\n}'</span>
+<span class="nb">alias </span><span class="nv">now</span><span class="o">=</span><span class="s1">'date +"%T"'</span>
+<span class="nb">alias </span><span class="nv">nowtime</span><span class="o">=</span>now
+<span class="nb">alias </span><span class="nv">nowdate</span><span class="o">=</span><span class="s1">'date +"%d-%m-%Y"'</span>
+</code></pre></div></div>
+
+<h3 id="10-set-vim-as-default">10. Set vim as default</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">vi</span><span class="o">=</span>vim
+<span class="nb">alias </span><span class="nv">svi</span><span class="o">=</span><span class="s1">'sudo vi'</span>
+<span class="nb">alias </span><span class="nv">vis</span><span class="o">=</span><span class="s1">'vim "+set si"'</span>
+<span class="nb">alias </span><span class="nv">edit</span><span class="o">=</span><span class="s1">'vim'</span>
+</code></pre></div></div>
+
+<h3 id="11-control-output-of-ping-command">11. Control output of ping command</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Stop after sending count ECHO_REQUEST packets #</span>
+<span class="nb">alias </span><span class="nv">ping</span><span class="o">=</span><span class="s1">'ping -c 5'</span>
+<span class="c"># Do not wait interval 1 second, go fast #</span>
+<span class="nb">alias </span><span class="nv">fastping</span><span class="o">=</span><span class="s1">'ping -c 100 -s.2'</span>
+</code></pre></div></div>
+
+<h3 id="12-show-open-ports">12. Show open ports</h3>
+<p>Use netstat command to quickly list all TCP/UDP port on the server:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">ports</span><span class="o">=</span><span class="s1">'netstat -tulanp'</span>
+</code></pre></div></div>
+
+<h3 id="13-wakeup-sleeping-servers">13. Wakeup sleeping servers</h3>
+<p>Wake-on-LAN (WOL) is an Ethernet networking standard that allows a server to be turned on by a network message. You can quickly wakeup nas devices and server using the following aliases:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## replace mac with your actual server mac address #</span>
+<span class="nb">alias </span><span class="nv">wakeupnas01</span><span class="o">=</span><span class="s1">'/usr/bin/wakeonlan 00:11:32:11:15:FC'</span>
+<span class="nb">alias </span><span class="nv">wakeupnas02</span><span class="o">=</span><span class="s1">'/usr/bin/wakeonlan 00:11:32:11:15:FD'</span>
+<span class="nb">alias </span><span class="nv">wakeupnas03</span><span class="o">=</span><span class="s1">'/usr/bin/wakeonlan 00:11:32:11:15:FE'</span>
+</code></pre></div></div>
+
+<h3 id="14-control-firewall-iptables-output">14. Control firewall (iptables) output</h3>
+<p>Netfilter is a host-based firewall for Linux operating systems. It is included as part of the Linux distribution and it is activated by default. This post list most common iptables solutions required by a new Linux user to secure his or her Linux operating system from intruders.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## shortcut  for iptables and pass it via sudo#</span>
+<span class="nb">alias </span><span class="nv">ipt</span><span class="o">=</span><span class="s1">'sudo /sbin/iptables'</span>
+
+<span class="c"># display all rules #</span>
+<span class="nb">alias </span><span class="nv">iptlist</span><span class="o">=</span><span class="s1">'sudo /sbin/iptables -L -n -v --line-numbers'</span>
+<span class="nb">alias </span><span class="nv">iptlistin</span><span class="o">=</span><span class="s1">'sudo /sbin/iptables -L INPUT -n -v --line-numbers'</span>
+<span class="nb">alias </span><span class="nv">iptlistout</span><span class="o">=</span><span class="s1">'sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'</span>
+<span class="nb">alias </span><span class="nv">iptlistfw</span><span class="o">=</span><span class="s1">'sudo /sbin/iptables -L FORWARD -n -v --line-numbers'</span>
+<span class="nb">alias </span><span class="nv">firewall</span><span class="o">=</span>iptlist
+</code></pre></div></div>
+
+<h3 id="15-debug-web-servercdn-problems-with-curl">15. Debug web server/CDN problems with curl</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># get web server headers #</span>
+<span class="nb">alias </span><span class="nv">header</span><span class="o">=</span><span class="s1">'curl -I'</span>
+ 
+<span class="c"># find out if remote server supports gzip / mod_deflate or not #</span>
+<span class="nb">alias </span><span class="nv">headerc</span><span class="o">=</span><span class="s1">'curl -I --compress'</span>
+</code></pre></div></div>
+
+<h3 id="16-add-safety-nets">16. Add safety nets</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># do not delete / or prompt if deleting more than 3 files at a time #</span>
+<span class="nb">alias rm</span><span class="o">=</span><span class="s1">'rm -I --preserve-root'</span>
+ 
+<span class="c"># confirmation #</span>
+<span class="nb">alias mv</span><span class="o">=</span><span class="s1">'mv -i'</span>
+<span class="nb">alias cp</span><span class="o">=</span><span class="s1">'cp -i'</span>
+<span class="nb">alias ln</span><span class="o">=</span><span class="s1">'ln -i'</span>
+ 
+<span class="c"># Parenting changing perms on / #</span>
+<span class="nb">alias chown</span><span class="o">=</span><span class="s1">'chown --preserve-root'</span>
+<span class="nb">alias chmod</span><span class="o">=</span><span class="s1">'chmod --preserve-root'</span>
+<span class="nb">alias chgrp</span><span class="o">=</span><span class="s1">'chgrp --preserve-root'</span>
+</code></pre></div></div>
+
+<h3 id="17-update-debian-server">17. Update Debian server</h3>
+<p><code class="language-plaintext highlighter-rouge">apt-get</code> command is used for installing packages over the internet (ftp or http). You can also upgrade all packages in a single operations:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># distro specific  - Debian / Ubuntu and friends #</span>
+<span class="c"># install with apt-get</span>
+<span class="nb">alias </span>apt-get<span class="o">=</span><span class="s2">"sudo apt-get"</span>
+<span class="nb">alias </span><span class="nv">updatey</span><span class="o">=</span><span class="s2">"sudo apt-get --yes"</span>
+ 
+<span class="c"># update on one command</span>
+<span class="nb">alias </span><span class="nv">update</span><span class="o">=</span><span class="s1">'sudo apt-get update &amp;&amp; sudo apt-get upgrade'</span>
+</code></pre></div></div>
+
+<h3 id="18-update-rhelcentos-server">18. Update RHEL/CentOS server</h3>
+<p><code class="language-plaintext highlighter-rouge">yum</code> command is a package management tool for RHEL / CentOS / Fedora Linux and friends:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## distrp specifc RHEL/CentOS ##</span>
+<span class="nb">alias </span><span class="nv">update</span><span class="o">=</span><span class="s1">'yum update'</span>
+<span class="nb">alias </span><span class="nv">updatey</span><span class="o">=</span><span class="s1">'yum -y update'</span>
+</code></pre></div></div>
+
+<h3 id="19-pass-halfreboot-via-sudo">19. Pass half/reboot via sudo</h3>
+<p><code class="language-plaintext highlighter-rouge">shutdown</code> command bring the Linux / Unix system down:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># reboot / halt / poweroff</span>
+<span class="nb">alias </span><span class="nv">reboot</span><span class="o">=</span><span class="s1">'sudo /sbin/reboot'</span>
+<span class="nb">alias </span><span class="nv">poweroff</span><span class="o">=</span><span class="s1">'sudo /sbin/poweroff'</span>
+<span class="nb">alias </span><span class="nv">halt</span><span class="o">=</span><span class="s1">'sudo /sbin/halt'</span>
+<span class="nb">alias </span><span class="nv">shutdown</span><span class="o">=</span><span class="s1">'sudo /sbin/shutdown'</span>
+</code></pre></div></div>
+
+<h3 id="20-control-web-servers">20. Control web servers</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># also pass it via sudo so whoever is admin can reload it without calling you #</span>
+<span class="nb">alias </span><span class="nv">nginxreload</span><span class="o">=</span><span class="s1">'sudo /usr/local/nginx/sbin/nginx -s reload'</span>
+<span class="nb">alias </span><span class="nv">nginxtest</span><span class="o">=</span><span class="s1">'sudo /usr/local/nginx/sbin/nginx -t'</span>
+<span class="nb">alias </span><span class="nv">lightyload</span><span class="o">=</span><span class="s1">'sudo /etc/init.d/lighttpd reload'</span>
+<span class="nb">alias </span><span class="nv">lightytest</span><span class="o">=</span><span class="s1">'sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'</span>
+<span class="nb">alias </span><span class="nv">httpdreload</span><span class="o">=</span><span class="s1">'sudo /usr/sbin/apachectl -k graceful'</span>
+<span class="nb">alias </span><span class="nv">httpdtest</span><span class="o">=</span><span class="s1">'sudo /usr/sbin/apachectl -t &amp;&amp; /usr/sbin/apachectl -t -D DUMP_VHOSTS'</span>
+</code></pre></div></div>
+
+<h3 id="21-alias-for-our-backup-stuff">21. Alias for our backup stuff</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># if cron fails or if you want backup on demand just run these commands #</span>
+<span class="c"># again pass it via sudo so whoever is in admin group can start the job #</span>
+<span class="c"># Backup scripts #</span>
+<span class="nb">alias </span><span class="nv">backup</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.backup.sh --type local --taget /raid1/backups'</span>
+<span class="nb">alias </span><span class="nv">nasbackup</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.backup.sh --type nas --target nas01'</span>
+<span class="nb">alias </span><span class="nv">s3backup</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.backup.sh --type nas --target nas01 --auth /home/scripts/admin/.authdata/amazon.keys'</span>
+<span class="nb">alias </span><span class="nv">rsnapshothourly</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.rsnapshot.sh --type remote --target nas03 --auth /home/scripts/admin/.authdata/ssh.keys --config /home/scripts/admin/scripts/backup/config/adsl.conf'</span>
+<span class="nb">alias </span><span class="nv">rsnapshotdaily</span><span class="o">=</span><span class="s1">'sudo  /home/scripts/admin/scripts/backup/wrapper.rsnapshot.sh --type remote --target nas03 --auth /home/scripts/admin/.authdata/ssh.keys  --config /home/scripts/admin/scripts/backup/config/adsl.conf'</span>
+<span class="nb">alias </span><span class="nv">rsnapshotweekly</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.rsnapshot.sh --type remote --target nas03 --auth /home/scripts/admin/.authdata/ssh.keys  --config /home/scripts/admin/scripts/backup/config/adsl.conf'</span>
+<span class="nb">alias </span><span class="nv">rsnapshotmonthly</span><span class="o">=</span><span class="s1">'sudo /home/scripts/admin/scripts/backup/wrapper.rsnapshot.sh --type remote --target nas03 --auth /home/scripts/admin/.authdata/ssh.keys  --config /home/scripts/admin/scripts/backup/config/adsl.conf'</span>
+<span class="nb">alias </span><span class="nv">amazonbackup</span><span class="o">=</span>s3backup
+</code></pre></div></div>
+
+<h3 id="22-get-system-information">22. Get system information</h3>
+<p>Some aliases to get system memory, cpu usage and gpu memori info quickly</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## pass options to free ##</span>
+<span class="nb">alias </span><span class="nv">meminfo</span><span class="o">=</span><span class="s1">'free -m -l -t'</span>
+ 
+<span class="c">## get top process eating memory</span>
+<span class="nb">alias </span><span class="nv">psmem</span><span class="o">=</span><span class="s1">'ps auxf | sort -nr -k 4'</span>
+<span class="nb">alias </span><span class="nv">psmem10</span><span class="o">=</span><span class="s1">'ps auxf | sort -nr -k 4 | head -10'</span>
+ 
+<span class="c">## get top process eating cpu ##</span>
+<span class="nb">alias </span><span class="nv">pscpu</span><span class="o">=</span><span class="s1">'ps auxf | sort -nr -k 3'</span>
+<span class="nb">alias </span><span class="nv">pscpu10</span><span class="o">=</span><span class="s1">'ps auxf | sort -nr -k 3 | head -10'</span>
+ 
+<span class="c">## Get server cpu info ##</span>
+<span class="nb">alias </span><span class="nv">cpuinfo</span><span class="o">=</span><span class="s1">'lscpu'</span>
+ 
+<span class="c">## older system use /proc/cpuinfo ##</span>
+<span class="c">##alias cpuinfo='less /proc/cpuinfo' ##</span>
+ 
+<span class="c">## get GPU ram on desktop / laptop##</span>
+<span class="nb">alias </span><span class="nv">gpumeminfo</span><span class="o">=</span><span class="s1">'grep -i --color memory /var/log/Xorg.0.log'</span>
+</code></pre></div></div>
+
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/linux/2023/03/23/ubuntu-20.04.6-support-secure-boot.html" title="Ubuntu 20.04.6 LTS Re-Enable Support for Secure Boot">Previous: Ubuntu 20.04.6 LTS Re-Enable Support for...</a><a class="next" href="/linux/2023/03/25/install-cloudflare-tunnel.html" title="Install Cloudflare Tunnel on Ubuntu">Next: Install Cloudflare Tunnel on Ubuntu</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/linux/self-hosting/2023/04/09/top-10-selfhosted-apps.html" title="Install Cloudflare Tunnel on Ubuntu">Top 10 Self-Hosted Apps</a></li>
+<li><a class="post-link" href="/linux/gaming/2023/03/20/install-valheim-server-linuxgsm.html" title="Install Cloudflare Tunnel on Ubuntu">Install Valheim Server with LinuxGSM</a></li>
+<li><a class="post-link" href="/linux/docker/2023/04/03/install-portainer.html" title="Install Cloudflare Tunnel on Ubuntu">Install Portainer with Docker</a></li>
+<li><a class="post-link" href="/linux/2023/04/11/how-to-use-scp.html" title="Install Cloudflare Tunnel on Ubuntu">How to use SCP command in Linux</a></li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Pure Awesome Work <span class="copyleft">©</span> 2017-2023 Admin Penguin</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

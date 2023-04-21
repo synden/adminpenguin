@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://10.20.10.88:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://10.20.10.88:4000/" rel="alternate" type="text/html" /><updated>2023-04-21T11:22:25+02:00</updated><id>http://10.20.10.88:4000/feed.xml</id><title type="html">AdminPenguin</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Admin Penguin</name></author><entry><title type="html">Proton 8.0 Release is Good News</title><link href="http://10.20.10.88:4000/linux/gaming/2023/04/21/proton-8-release.html" rel="alternate" type="text/html" title="Proton 8.0 Release is Good News" /><published>2023-04-21T00:00:00+02:00</published><updated>2023-04-21T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/gaming/2023/04/21/proton-8-release</id><content type="html" xml:base="http://10.20.10.88:4000/linux/gaming/2023/04/21/proton-8-release.html"><![CDATA[<p>Valve released today Proton 8.0 as the latest version of their open-source compatibility tool for Steam Play based on Wine and additional components for those of you who want to play Windows games on your GNU/Linux systems.</p>
+
+<p><a href="https://twitter.com/Plagman2/status/1648029861032890368">According to Valve</a>, Proton 8.0 is the biggest update to date bringing support for numerous Windows games that you can now play on your Linux box.</p>
+
+<p>Though, keep in mind that with the release of Proton 8.0, a GPU with at least Vulkan 1.3 support is required to run it smoothly.</p>
+
+<p>Some of the biggest highlights among the games include:</p>
+<ul>
+  <li>Forspoken</li>
+  <li>Samurai Maiden</li>
+  <li>Dead Space (2023)</li>
+  <li>Creativerse</li>
+  <li>Nioh 2 - The Complete Edition</li>
+  <li>One Piece: Pirate Warriors 4</li>
+  <li>Atelier Meruru</li>
+  <li>Atelier Lydie &amp; Suelle ~The Alchemists and the Mysterious Paintings~</li>
+  <li>Atelier Sophie: The Alchemist of the Mysterious Book DX</li>
+  <li>Blue Reflection</li>
+  <li>Atelier Rorona ~The Alchemist of Arland~ DX</li>
+  <li>Disney Dreamlight Valley</li>
+  <li>ROMANCE OF THE THREE KINGDOMS XIV</li>
+  <li>ToGather:Island</li>
+  <li>WARRIORS OROCHI 3 Ultimate Definitive Edition</li>
+  <li>Exceed - Gun Bullet Children</li>
+  <li>Gungrave G.O.R.E.</li>
+  <li>Chex Quest HD</li>
+</ul>
+
+<p>Additionally, there are improvements that should help Steam Deck users, including:</p>
+<ul>
+  <li>Improved sleep/resume functionality on Steam Deck for Tiny Tina’s Wonderland.</li>
+  <li>Improved multitouch support</li>
+</ul>
+
+<p>Proton 8.0 improves multi-touch support, improves support for the game launcher from 2K, fixes Alt+Tab issues on the GNOME 43 series desktop, and enables NVIDIA API (NVAPI) for many games. Valve also notes the fact that this major Proton release requires a graphics card that supports <a href="https://9to5linux.com/vulkan-1-3-released-with-dynamic-rendering-improved-synchronization-api">Vulkan 1.3</a>.</p>
+
+<p>Under the hood, Proton 8.0 comes with updated core components like Wine 8.0, wine-mono 7.4.1, dxvk 2.1-4-gcaf31033, vkd3d-proton 2.8-84-g08909d98, and dxvk-nvapi 0.6.2.</p>
+
+<p>You can read the full <a href="https://github.com/ValveSoftware/Proton/releases/tag/proton-8.0-1c?ref=news.itsfoss.com">release notes</a> here.</p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="gaming" /><category term="linux" /><category term="proton" /><summary type="html"><![CDATA[Valve released today Proton 8.0 as the latest version of their open-source compatibility tool for Steam Play based on Wine and additional components for those of you who want to play Windows games on your GNU/Linux systems.]]></summary></entry><entry><title type="html">10 Ansible Best Practices for Beginners</title><link href="http://10.20.10.88:4000/linux/2023/04/13/10-ansible-best-practices.html" rel="alternate" type="text/html" title="10 Ansible Best Practices for Beginners" /><published>2023-04-13T00:00:00+02:00</published><updated>2023-04-13T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/13/10-ansible-best-practices</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/13/10-ansible-best-practices.html"><![CDATA[<p>Ansible is a powerful automation tool that can help you manage your IT infrastructure and streamline your workflow. However, like any tool, it’s important to use Ansible effectively to get the best results. In this article, we’ll cover 10 Ansible best practices for beginners to help you get started with Ansible and optimize your automation tasks.</p>
+
+<h2 id="use-version-control">Use version control</h2>
+<p>Version control is essential for managing your Ansible code. Use a version control system like Git to track changes to your Ansible playbooks and roles. This will help you keep track of changes, collaborate with others, and roll back changes if necessary.</p>
+
+<h2 id="write-idempotent-playbooks">Write idempotent playbooks</h2>
+<p>Idempotency is a key concept in Ansible. An idempotent playbook is one that can be run multiple times without causing any unwanted side effects. Use modules like <code class="language-plaintext highlighter-rouge">file</code>, <code class="language-plaintext highlighter-rouge">service</code>, and <code class="language-plaintext highlighter-rouge">package</code> to ensure that your playbooks are idempotent.</p>
+
+<h2 id="use-roles-for-modularity">Use roles for modularity</h2>
+<p>Roles are a way to organize your Ansible code into reusable components. Use roles to separate your code into logical units, making it easier to manage and reuse. Roles also help you keep your playbooks clean and easy to read.</p>
+
+<h2 id="use-variables-for-flexibility">Use variables for flexibility</h2>
+<p>Variables are a powerful feature of Ansible that allow you to customize your playbooks and roles for different environments. Use variables to make your playbooks flexible and reusable. You can define variables in your inventory, playbooks, or roles.</p>
+
+<h2 id="use-the-when-statement-for-conditional-execution">Use the when statement for conditional execution</h2>
+<p>The <code class="language-plaintext highlighter-rouge">when</code> statement allows you to execute tasks conditionally. Use <code class="language-plaintext highlighter-rouge">when</code> to make your playbooks more flexible and to avoid unnecessary tasks. You can use conditionals like <code class="language-plaintext highlighter-rouge">ansible_os_family</code>, <code class="language-plaintext highlighter-rouge">ansible_distribution</code>, and <code class="language-plaintext highlighter-rouge">ansible_distribution_version</code> to make your playbooks more dynamic.</p>
+
+<h2 id="use-handlers-for-notifications">Use handlers for notifications</h2>
+<p>Handlers are a way to trigger notifications when changes are made to your system. Use handlers to restart services, reload configurations, and send notifications. Handlers are only triggered when a task notifies them, which makes them more efficient than running the same task multiple times.</p>
+
+<h2 id="use-tags-for-selective-execution">Use tags for selective execution</h2>
+<p>Tags allow you to selectively execute tasks in your playbooks. Use tags to run only the tasks you need and to avoid running unnecessary tasks. You can define tags at the task level or at the playbook level.</p>
+
+<h2 id="use-ansible-lint-for-code-quality">Use ansible-lint for code quality</h2>
+<p><code class="language-plaintext highlighter-rouge">ansible-lint</code> is a tool that checks your Ansible code for best practices and common mistakes. <code class="language-plaintext highlighter-rouge">Use ansible-lint</code> to improve the quality of your code and to avoid common pitfalls. <code class="language-plaintext highlighter-rouge">ansible-lint</code> checks for things like indentation, quoting, and variable use.</p>
+
+<h2 id="use-ansible-playbook-check-for-dry-runs">Use ansible-playbook –check for dry runs</h2>
+<p>The <code class="language-plaintext highlighter-rouge">--check</code> flag allows you to run your playbook in “dry run” mode. This means that Ansible will simulate the execution of your playbook without making any changes to your system. Use <code class="language-plaintext highlighter-rouge">--check</code> to test your playbooks before running them for real.</p>
+
+<h2 id="use-roles-from-the-ansible-galaxy">Use roles from the Ansible Galaxy</h2>
+<p>The Ansible Galaxy is a repository of roles created by the Ansible community. Use roles from the Ansible Galaxy to save time and to leverage the expertise of the community. You can search for roles on the Ansible Galaxy website or from the command line using <code class="language-plaintext highlighter-rouge">ansible-galaxy</code>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>These 10 Ansible best practices for beginners will help you get started with Ansible and make the most of this powerful automation tool. Remember to use version control, write idempotent playbooks, use roles for modularity, use variables for flexibility, and use the <code class="language-plaintext highlighter-rouge">when</code> statement for conditional execution. Use <strong>handlers</strong> for notifications, tags for selective execution, and <code class="language-plaintext highlighter-rouge">ansible-lint</code> for code quality. Finally, leverage the Ansible Galaxy to save time and benefit from the knowledge of the Ansible community. By applying these best practices, you can ensure that your Ansible automation tasks are efficient, maintainable, and effective.</p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="ansible" /><category term="ubuntu" /><summary type="html"><![CDATA[Ansible is a powerful automation tool that can help you manage your IT infrastructure and streamline your workflow. However, like any tool, it’s important to use Ansible effectively to get the best results. In this article, we’ll cover 10 Ansible best practices for beginners to help you get started with Ansible and optimize your automation tasks.]]></summary></entry><entry><title type="html">Ansible Installation &amp;amp; Basics</title><link href="http://10.20.10.88:4000/linux/2023/04/13/ansible-basics.html" rel="alternate" type="text/html" title="Ansible Installation &amp;amp; Basics" /><published>2023-04-13T00:00:00+02:00</published><updated>2023-04-13T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/13/ansible-basics</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/13/ansible-basics.html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Ansible is an open-source automation tool that allows you to automate the configuration management, application deployment, and task automation. Ansible uses a simple and easy-to-learn syntax based on YAML that makes it easier to read and write automation tasks. In this tutorial, we will cover the basic concepts of Ansible and demonstrate how to install packages, update systems, and perform other tasks using Ansible.</p>
+
+<h2 id="installing-ansible">Installing Ansible</h2>
+<p>Before we begin, we need to install Ansible on our machine. Ansible can be installed on any Linux, macOS, or Windows machine. The easiest way to install Ansible on Linux is by using the package manager of your Linux distribution. For example, on Ubuntu, you can run the following command to install Ansible:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>ansible
+</code></pre></div></div>
+<p>Once Ansible is installed, you can check its version by running:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansible <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h2 id="writing-ansible-playbooks">Writing Ansible Playbooks</h2>
+<p>Ansible uses Playbooks to automate tasks. A Playbook is a YAML file that contains a set of tasks that Ansible will execute. Here is an example of a simple Playbook that installs the Nginx web server:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install Nginx</span>
+  <span class="na">hosts</span><span class="pi">:</span> <span class="s">all</span>
+  <span class="na">become</span><span class="pi">:</span> <span class="s">yes</span>
+  <span class="na">tasks</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install Nginx package</span>
+      <span class="na">apt</span><span class="pi">:</span>
+        <span class="na">name</span><span class="pi">:</span> <span class="s">nginx</span>
+        <span class="na">state</span><span class="pi">:</span> <span class="s">present</span>
+</code></pre></div></div>
+
+<p><strong>Let’s break down this Playbook:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">name</code>: A descriptive name for the Playbook.</li>
+  <li><code class="language-plaintext highlighter-rouge">hosts</code>: The target hosts that Ansible will execute the tasks on. In this case, we’re targeting all hosts.</li>
+  <li><code class="language-plaintext highlighter-rouge">become</code>: This tells Ansible to elevate the privileges to become a superuser before executing the tasks.</li>
+  <li><code class="language-plaintext highlighter-rouge">tasks</code>: A list of tasks that Ansible will execute.</li>
+</ul>
+
+<p>The first task in this Playbook installs the <strong>Nginx</strong> package using the <code class="language-plaintext highlighter-rouge">apt</code> module. The <code class="language-plaintext highlighter-rouge">name</code> parameter specifies the name of the package to install, and the <code class="language-plaintext highlighter-rouge">state</code> parameter specifies that we want to make sure the package is installed.</p>
+
+<h3 id="running-ansible-playbooks">Running Ansible Playbooks</h3>
+<p>To run this Playbook, save it to a file named <strong>install_nginx.yaml</strong>, and run the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansible-playbook install_nginx.yaml
+</code></pre></div></div>
+
+<p>Ansible will connect to the target hosts and execute the tasks specified in the Playbook.</p>
+
+<h2 id="updating-systems">Updating Systems</h2>
+<p>You can also use Ansible to update the system packages. Here’s an example Playbook that updates the system packages:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Update packages</span>
+  <span class="na">hosts</span><span class="pi">:</span> <span class="s">all</span>
+  <span class="na">become</span><span class="pi">:</span> <span class="s">yes</span>
+  <span class="na">tasks</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Update packages</span>
+      <span class="na">apt</span><span class="pi">:</span>
+        <span class="na">upgrade</span><span class="pi">:</span> <span class="s">dist</span>
+        <span class="na">update_cache</span><span class="pi">:</span> <span class="s">yes</span>
+</code></pre></div></div>
+<p>This Playbook uses the <code class="language-plaintext highlighter-rouge">apt</code> module to update the system packages. The <code class="language-plaintext highlighter-rouge">upgrade</code> parameter specifies that we want to perform a distribution upgrade, and the <code class="language-plaintext highlighter-rouge">update_cache</code> parameter specifies that we want to update the package cache.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this tutorial, we covered the basic concepts of Ansible and demonstrated how to install packages, update systems, and perform other tasks using Ansible. Ansible is a powerful automation tool that can help you save time and increase productivity. With Ansible, you can automate almost any task, no matter how complex it is.</p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="ansible" /><category term="ubuntu" /><summary type="html"><![CDATA[Introduction Ansible is an open-source automation tool that allows you to automate the configuration management, application deployment, and task automation. Ansible uses a simple and easy-to-learn syntax based on YAML that makes it easier to read and write automation tasks. In this tutorial, we will cover the basic concepts of Ansible and demonstrate how to install packages, update systems, and perform other tasks using Ansible.]]></summary></entry><entry><title type="html">New Browser From Mullvad &amp;amp; Tor Project</title><link href="http://10.20.10.88:4000/linux/2023/04/12/mullvad-vpn-tor.html" rel="alternate" type="text/html" title="New Browser From Mullvad &amp;amp; Tor Project" /><published>2023-04-12T00:00:00+02:00</published><updated>2023-04-12T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/12/mullvad-vpn-tor</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/12/mullvad-vpn-tor.html"><![CDATA[<p>The Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project. It’s designed to minimize tracking and fingerprinting. You could say it’s a Tor Browser to use without the Tor Network. Instead, you can use it with a trustworthy VPN. The idea is to provide one more alternative - beside the Tor Network - to browse the internet with more privacy. To get as many people as possible to fight the big data gathering of today. To free the internet from mass surveillance.</p>
+
+<h2 id="why-use-the-mullvad-browser">Why use the Mullvad Browser?</h2>
+<p>In short: the Mullvad Browser is Tor Browser without the Tor Network – a browser that allows anyone to take advantage of all the browser privacy features the Tor Project has created. If people want to connect the browser with a VPN they trust, they can easily do so.</p>
+
+<p>Our goal was to give users the privacy protections of Tor Browser without Tor. For instance, the Mullvad Browser applies a “hide-in-the-crowd” approach to online privacy by creating a similar fingerprint for all of its users. The browser’s ‘out-of-the-box’ configurations and settings will mask many parameters and features commonly used to extract information from a person’s device that can make them identifiable, including fonts, rendered content, and several hardware APIs. By default, Mullvad Browser has private mode enabled, blocks third-party trackers and cookies, and makes it easy to delete cookies between visiting pages during the same session.</p>
+
+<h2 id="what-does-that-mean-for-us-and-tor-browser">What does that mean for us and Tor Browser?</h2>
+<p>Let’s be clear: Tor Browser is here to stay, and we’ll continue to iterate and improve on it and our other services. We know that millions of users around the world rely on Tor Browser and other solutions that the Tor Project offers to safely connect to the internet, to browse anonymously online and to circumvent censorship. Therefore Tor Browser will continue to exist.</p>
+
+<p>You can read more about it over at the <a href="https://blog.torproject.org/releasing-mullvad-browser/">Tor Project</a> and <a href="https://mullvad.net/en/browser">Mullvad</a></p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="vpn" /><category term="tor" /><summary type="html"><![CDATA[The Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project. It’s designed to minimize tracking and fingerprinting. You could say it’s a Tor Browser to use without the Tor Network. Instead, you can use it with a trustworthy VPN. The idea is to provide one more alternative - beside the Tor Network - to browse the internet with more privacy. To get as many people as possible to fight the big data gathering of today. To free the internet from mass surveillance.]]></summary></entry><entry><title type="html">Cinnamon Remix Becomes Official Ubuntu Flavor</title><link href="http://10.20.10.88:4000/linux/2023/04/12/ubuntu-cinnamon.html" rel="alternate" type="text/html" title="Cinnamon Remix Becomes Official Ubuntu Flavor" /><published>2023-04-12T00:00:00+02:00</published><updated>2023-04-12T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/12/ubuntu-cinnamon</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/12/ubuntu-cinnamon.html"><![CDATA[<p>The Ubuntu Cinnamon Remix distribution has officially become an official Ubuntu flavor and will join the rest of the flavors starting with the upcoming Ubuntu 23.04 (Lunar Lobster) release.</p>
+
+<p>Created and maintained by members of the Linux community, Ubuntu Cinnamon Remix is an Ubuntu derivative that features the modern Cinnamon desktop environment developed by the Linux Mint team. Cinnamon Remix aims to offer a traditional approach to the modern Linux desktop.</p>
+
+<p>Read more at <a href="https://9to5linux.com/ubuntu-cinnamon-remix-becomes-official-ubuntu-flavor">9to5linux.com</a></p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="ubuntu" /><summary type="html"><![CDATA[The Ubuntu Cinnamon Remix distribution has officially become an official Ubuntu flavor and will join the rest of the flavors starting with the upcoming Ubuntu 23.04 (Lunar Lobster) release.]]></summary></entry><entry><title type="html">File Permissions in Linux</title><link href="http://10.20.10.88:4000/linux/2023/04/11/file-permissions.html" rel="alternate" type="text/html" title="File Permissions in Linux" /><published>2023-04-11T00:00:00+02:00</published><updated>2023-04-11T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/11/file-permissions</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/11/file-permissions.html"><![CDATA[<p>File permissions in Linux determine who can access, modify, and execute files. It is an essential aspect of security and privacy in Linux systems. There are three types of permissions: read, write, and execute, which are represented by the letters r, w, and x, respectively. In this tutorial, we will explain the basics of file permissions in Linux.</p>
+
+<p>To list the file permissions of a file or directory, use the ls command with the -l option. The output of the command will show the permissions, owner, group, size, and modification date of the file.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-l</span> myfile.txt
+</code></pre></div></div>
+<p>The output will look like this:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-rw-r--r--</span> 1 user group 1024 Apr 11 2023 myfile.txt
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>The first character, <code class="language-plaintext highlighter-rouge">-</code> represents the type of file. A hyphen (-) represents a regular file, and <code class="language-plaintext highlighter-rouge">d</code> represents a directory.</p>
+  </li>
+  <li>
+    <p>The next three characters, <code class="language-plaintext highlighter-rouge">rw-</code> represent the user permissions. In this case, the user has read and write permissions but no execute permission.</p>
+  </li>
+  <li>
+    <p>The next three characters, <code class="language-plaintext highlighter-rouge">r--</code> represent the group permissions. In this case, the group has read-only permission.</p>
+  </li>
+  <li>
+    <p>The last three characters, <code class="language-plaintext highlighter-rouge">r--</code> represent the other permissions. In this case, everyone else has read-only permission.</p>
+  </li>
+</ul>
+
+<h2 id="permission-groups">Permission Groups</h2>
+<h3 id="user-permission-group">User Permission Group</h3>
+<p>This group holds permissions for the user that is currently marked as the owner of the file or directory.</p>
+
+<p>Typically this is the user that created the file, but ownership can be changed in Linux by making use of the <code class="language-plaintext highlighter-rouge">chown</code> command.</p>
+
+<h3 id="group-permission-group">Group Permission Group</h3>
+<p>This permission group is used to define permissions that apply to all members of the group that currently owns the file or directory.</p>
+
+<p>For example, if the group that owns the file or directory is called <strong>“myfolder”</strong> then all users who belong to that group get assigned these permissions.</p>
+
+<p>Like the user permission group, this defaults to the same group of the user who created the file/directory. You can change the group of a file or directory by making use of the <code class="language-plaintext highlighter-rouge">chown</code> or the <code class="language-plaintext highlighter-rouge">chgrp</code> command.</p>
+
+<h3 id="other-permission-group">Other Permission Group</h3>
+<p>This permission group is for users who are not the owner or group member of the file or directory. Typically you would heavily restrict the permissions used for this group as any user gets assigned these permissions.</p>
+
+<p>For example, you would likely not allow anyone in this group to write or execute a file.</p>
+
+<h2 id="permissions">Permissions</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>r</td>
+      <td>Read permission</td>
+      <td>Allows the permission group to read the contents of the file or directory</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>Write permission</td>
+      <td>Allows the permission group to write content to the file or directory</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>Execute permission</td>
+      <td>Allow the permission group to "**run**" a file.</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Disabled Permission</td>
+      <td>Blocks a permission group from running the permission its replacing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="read-permission">Read Permission</h3>
+<p>When set for a file, the read permission allows the permission group to open and view its contents. When set for a directory, it allows the group to list the contents of the directory.</p>
+
+<h3 id="write-permission">Write Permission</h3>
+<p>When the write permission has been set for a file, it means that the permission group will be able to modify that file. When the write permission has been assigned to a directory, the permission group will be able to add, delete, and rename files stored in that directory.</p>
+
+<p>There are a few more things you have to take into consideration when dealing with write permissions. If you permit a group to write to a file but not a directory, then the user will only be able to modify the contents of that file.</p>
+
+<p>Without the write permission on the directory, the permission group will not be able to add, delete or rename any files within it.</p>
+
+<h3 id="execute-permissions">Execute Permissions</h3>
+<p>With the execute permission set on a file, that permission group will be able to execute the file. If the file is not an executable program, then it is best not to set any execute rights on the file.</p>
+
+<p>When the execute permission is set on a directory, it means that a permission group will be able to change into the directory and access any of its files.</p>
+
+<h3 id="change-permissions">Change Permissions</h3>
+<p>You can change the file permissions using the <code class="language-plaintext highlighter-rouge">chmod</code> command. The <code class="language-plaintext highlighter-rouge">chmod</code> command uses a combination of letters and numbers to change the file permissions. The letters represent the <strong>user</strong>, <strong>group</strong>, and <strong>other</strong>, and the numbers represent the permission bits.</p>
+
+<p>To change the permission of a file, use the <code class="language-plaintext highlighter-rouge">chmod</code> command followed by the permission bits and the filename. For example, to give the user read, write, and execute permission to the file <code class="language-plaintext highlighter-rouge">myfile.txt</code>, use the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod </span>u+rwx myfile.txt
+</code></pre></div></div>
+
+<p>The <strong>“u”</strong> stands for user, and <strong>“rwx”</strong> stands for read, write, and execute. You can also use numbers to represent the permission bits. For example, 4 represents read, 2 represents write, and 1 represents execute. Therefore, to give the user read, write, and execute permission, you can use the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod </span>700 myfile.txt
+</code></pre></div></div>
+<p>The <strong>“7”</strong> represents read, write, and execute, and the <strong>“00”</strong> represents no permission for group and other.</p>
+
+<h4 id="changing-file-ownership">Changing file ownership</h4>
+<p>You can change the ownership of a file using the <code class="language-plaintext highlighter-rouge">chown</code> command. The <code class="language-plaintext highlighter-rouge">chown</code> command is followed by the username and the filename.</p>
+
+<p>For example, to change the ownership of a file called myfile.txt to a user named john, use the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chown </span>john myfile.txt
+</code></pre></div></div>
+
+<p>You can also change the ownership and group of a file using the <code class="language-plaintext highlighter-rouge">chown</code> command. The <code class="language-plaintext highlighter-rouge">chown</code> command is followed by the username, group name, and filename.</p>
+
+<p>For example, to change the ownership of a file called myfile.txt to a user named john and the group to a group named staff, use the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chown </span>john:staff myfile.txt
+</code></pre></div></div>
+<p><br />
+<br />
+In conclusion, file permissions are an essential aspect of Linux security. Understanding how to set and modify file permissions is crucial for protecting sensitive files and ensuring the privacy of users.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong><br />
+Never user permission 777 on files and folders!</p>
+</blockquote>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="user-management" /><summary type="html"><![CDATA[File permissions in Linux determine who can access, modify, and execute files. It is an essential aspect of security and privacy in Linux systems. There are three types of permissions: read, write, and execute, which are represented by the letters r, w, and x, respectively. In this tutorial, we will explain the basics of file permissions in Linux.]]></summary></entry><entry><title type="html">Firefox 113 Beta Adds Animated AV1 Image Support</title><link href="http://10.20.10.88:4000/linux/2023/04/11/firefox-113-beta.html" rel="alternate" type="text/html" title="Firefox 113 Beta Adds Animated AV1 Image Support" /><published>2023-04-11T00:00:00+02:00</published><updated>2023-04-11T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/11/firefox-113-beta</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/11/firefox-113-beta.html"><![CDATA[<p>In the latest Firefox 113 Beta release, there are significant updates and improvements. Firefox for Android now has hardware accelerated AV1 video decoding enabled by default for supported devices, or it will fallback to software decoding. GPU-accelerated Canvas2D is also enabled by default on Firefox for Android. Additionally, Firefox 113 Beta includes better password generation that now includes special characters, enhancing security.</p>
+
+<p>The update also features improved Picture-in-Picture mode, drag-and-drop functionality from Microsoft Outlook on Windows, and support for FIDO2/WebAuthn authenticators over USB on macOS and Linux. These changes make Firefox 113 Beta a noteworthy update. The release is available for download from <a href="https://www.mozilla.org/en-US/firefox/113.0beta/releasenotes/">Mozilla.org</a>. The stable release is expected to come out around 9 May.</p>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="firefox" /><summary type="html"><![CDATA[In the latest Firefox 113 Beta release, there are significant updates and improvements. Firefox for Android now has hardware accelerated AV1 video decoding enabled by default for supported devices, or it will fallback to software decoding. GPU-accelerated Canvas2D is also enabled by default on Firefox for Android. Additionally, Firefox 113 Beta includes better password generation that now includes special characters, enhancing security.]]></summary></entry><entry><title type="html">How to use SCP command in Linux</title><link href="http://10.20.10.88:4000/linux/2023/04/11/how-to-use-scp.html" rel="alternate" type="text/html" title="How to use SCP command in Linux" /><published>2023-04-11T00:00:00+02:00</published><updated>2023-04-11T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/11/how-to-use-scp</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/11/how-to-use-scp.html"><![CDATA[<h2 id="command-syntax">Command Syntax</h2>
+<p>SCP is short for secure copy protocol and is used to copy files and directories between multiple Linux machines over a network. The data transferred using SCP is encrypted to protect your data against nefarious agents.</p>
+
+<blockquote>
+  <p><strong>Warning</strong>
+The scp command will not prompt when overwriting files, so be wary if you do not want certain files overwritten while you are copying.</p>
+</blockquote>
+
+<p>Below is a very fundamental example of the scp command syntax. Specific options and other requirements may alter the syntax slightly but should remain roughly the same.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp <span class="o">[</span>OPTIONS] <span class="o">[</span>SOURCE] <span class="o">[</span>DESTINATION]
+</code></pre></div></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>OPTIONS</strong> is where you specify any extra settings that you would like applied to the command. For example, using a different port or compressing data while transferring to the destination.<br /><br /></li>
+  <li><strong>SOURCE</strong> is the source file or directory. You can choose a local directory or file. Alternatively, you can set it to a location on a remote machine. Specifying a remote system will look similar to <code class="language-plaintext highlighter-rouge">user@10.0.0.3:/remote/directory</code>.<br /><br /></li>
+  <li><strong>DESTINATION</strong> is the destination for the source. You can set it to a location on a remote machine or your local machine. A location on a remote system should be in the following layout <code class="language-plaintext highlighter-rouge">user@10.0.0.3:/remote/directory</code>.</li>
+</ul>
+
+<h2 id="command-options">Command Options</h2>
+<p>Here are some few options you can use:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-P</code> port allows you to specify the port to use when connecting to a remote host.</li>
+  <li><code class="language-plaintext highlighter-rouge">-p</code> will preserve the modification times, access times, and modes from the original file.</li>
+  <li><code class="language-plaintext highlighter-rouge">-q</code> disables the output from the command. SCP will show no progress bar or warnings.</li>
+  <li><code class="language-plaintext highlighter-rouge">-r</code> will recursively copy directories and their files. SCP will follow symbolic links as it traverses the directory structure.</li>
+  <li><code class="language-plaintext highlighter-rouge">-C</code> enables compression for transferring files.</li>
+  <li><code class="language-plaintext highlighter-rouge">-v</code> will enable the verbose mode. It will cause SCP and SSH to print debugging messages throughout their progress.</li>
+</ul>
+
+<h2 id="copy-local-file-to-remote-system">Copy local file to Remote system</h2>
+<p>The command below will copy <code class="language-plaintext highlighter-rouge">example.txt</code> from the local host to <code class="language-plaintext highlighter-rouge">/home/dev/</code> directory on the remote host using the user <code class="language-plaintext highlighter-rouge">dev</code> to connect to the remote host.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp example.txt dev@10.10.0.2:/home/dev/
+</code></pre></div></div>
+
+<h2 id="rename-a-file-at-destination">Rename a file at destination</h2>
+<p>If you want the file you are copying to have a new name at the destination just simply specify the name at the end of the remote directory.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp example.txt dev@10.10.0.2:/home/dev/newName.txt
+</code></pre></div></div>
+
+<h2 id="copy-remote-file-to-local-system">Copy remote file to local system</h2>
+<p>The following command will copy from remote system to your local system. The <code class="language-plaintext highlighter-rouge">./</code> is our working directory.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp dev@10.10.0.2:/home/dev/remote.txt ./
+</code></pre></div></div>
+
+<h2 id="copy-between-two-remote-systems">Copy between two remote systems</h2>
+<p>The following command will copy the file <code class="language-plaintext highlighter-rouge">RemoteSystem2.txt</code>from host <code class="language-plaintext highlighter-rouge">10.10.0.3</code> to the directory <code class="language-plaintext highlighter-rouge">/home/dev/</code> on host <code class="language-plaintext highlighter-rouge">10.10.0.2</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp user2@10.10.0.3:/home/user2/RemoteSystem2.txt dev@10.10.0.2:/home/dev/
+</code></pre></div></div>
+
+<h2 id="copy-multiple-files">Copy multiple files</h2>
+<p>If you want to copy multiple files at the same time just run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp example1.txt example2.txt example3.txt dev@10.10.0.3:/home/dev/
+</code></pre></div></div>
+
+<h2 id="copy-recursively">Copy Recursively</h2>
+<p>In the example below, we have a folder named scp which we will recursively copy all the files and directories to our destination. If you want to use the current working directory, you will need to use <code class="language-plaintext highlighter-rouge">$(pwd)</code> and not <code class="language-plaintext highlighter-rouge">./</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp <span class="nt">-r</span> ./scp dev@10.10.0.3:/home/dev/
+</code></pre></div></div>
+
+<h2 id="change-default-scp-port">Change default scp port</h2>
+<p>To change the default SCP port from port <code class="language-plaintext highlighter-rouge">22</code> to something else, you will need to use the <code class="language-plaintext highlighter-rouge">-P PORT</code> option. You will find this useful as many system administrators change the default port for SSH.</p>
+
+<p>Below is an example of how you use the <code class="language-plaintext highlighter-rouge">-P</code> option. Simply specify <code class="language-plaintext highlighter-rouge">-P</code> followed by the port you wish to use. In our case, we are using port <code class="language-plaintext highlighter-rouge">8080</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp <span class="nt">-P</span> 8080 example.txt dev@10.10.0.3:/home/dev/
+</code></pre></div></div>
+
+<h2 id="compress-file-during-transfer">Compress file during transfer</h2>
+<p>Compressing the file is great for speeding up the transfer process. To use compression, simply use the <code class="language-plaintext highlighter-rouge">-C</code> option.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp <span class="nt">-C</span> largefile.zip dev@10.10.0.3:/home/dev/
+</code></pre></div></div>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><summary type="html"><![CDATA[Command Syntax SCP is short for secure copy protocol and is used to copy files and directories between multiple Linux machines over a network. The data transferred using SCP is encrypted to protect your data against nefarious agents.]]></summary></entry><entry><title type="html">Install Tailscale</title><link href="http://10.20.10.88:4000/linux/2023/04/10/install-tailscale.html" rel="alternate" type="text/html" title="Install Tailscale" /><published>2023-04-10T00:00:00+02:00</published><updated>2023-04-10T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/2023/04/10/install-tailscale</id><content type="html" xml:base="http://10.20.10.88:4000/linux/2023/04/10/install-tailscale.html"><![CDATA[<h2 id="ubuntu-2204jammy">Ubuntu 22.04(Jammy)</h2>
+<p>Packages are available for x86 and ARM CPUs, in both 32-bit and 64-bit variants.</p>
+
+<ul>
+  <li><strong>Add package signing key and repository:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-fsSL</span> https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | <span class="nb">sudo tee</span> /usr/share/keyrings/tailscale-archive-keyring.gpg <span class="o">&gt;</span>/dev/null
+curl <span class="nt">-fsSL</span> https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/tailscale.list
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Install Tailscale:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>tailscale
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Connect your machine to your Tailscale network and authenticate in your browser:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>tailscale up
+</code></pre></div>    </div>
+  </li>
+  <li><strong>You’re connected! You can find your Tailscale IPv4 address by running:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tailscale ip <span class="nt">-4</span>
+</code></pre></div>    </div>
+    <p><br />
+If the device you added is a server or remotely-accessed device, you may want to consider <a href="https://tailscale.com/kb/1028/key-expiry">disabling key expiry</a> to prevent the need to periodically re-authenticate.</p>
+  </li>
+</ul>
+
+<h2 id="centos-8rhel">CentOS 8/RHEL</h2>
+<ul>
+  <li><strong>Add the Tailscale repository and install Tailscale:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf config-manager <span class="nt">--add-repo</span> https://pkgs.tailscale.com/stable/centos/8/tailscale.repo
+<span class="nb">sudo </span>dnf <span class="nb">install </span>tailscale
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Use systemctl to enable and start the service:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable</span> <span class="nt">--now</span> tailscaled
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Connect your machine to your Tailscale network and authenticate in your browser:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>tailscale up
+</code></pre></div>    </div>
+  </li>
+  <li><strong>You’re connected! You can find your Tailscale IPv4 address by running:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tailscale ip <span class="nt">-4</span>
+</code></pre></div>    </div>
+    <p><br />
+If the device you added is a server or remotely-accessed device, you may want to consider <a href="https://tailscale.com/kb/1028/key-expiry">disabling key expiry</a> to prevent the need to periodically re-authenticate.</p>
+  </li>
+</ul>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="linux" /><category term="ubuntu" /><category term="rhel" /><summary type="html"><![CDATA[Ubuntu 22.04(Jammy) Packages are available for x86 and ARM CPUs, in both 32-bit and 64-bit variants.]]></summary></entry><entry><title type="html">List of Selfhosted Apps</title><link href="http://10.20.10.88:4000/linux/self-hosting/2023/04/09/awesome-selfhosted-apps.html" rel="alternate" type="text/html" title="List of Selfhosted Apps" /><published>2023-04-09T00:00:00+02:00</published><updated>2023-04-09T00:00:00+02:00</updated><id>http://10.20.10.88:4000/linux/self-hosting/2023/04/09/awesome-selfhosted-apps</id><content type="html" xml:base="http://10.20.10.88:4000/linux/self-hosting/2023/04/09/awesome-selfhosted-apps.html"><![CDATA[<p>Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers.</p>
+
+<p>This is a list of Free Software network services and web applications which can be hosted on your own server(s). Non-Free software is listed on the Non-Free page.</p>
+
+<p>This GitHub page have an extended list of useful applications to try out. Some even have a Docker image for easy installation. Some of the categories are:</p>
+<ul>
+  <li>Automation</li>
+  <li>Backup</li>
+  <li>Documentation</li>
+  <li>E-Commerce</li>
+  <li>File Transfer</li>
+  <li>Media Streaming</li>
+  <li>Photo and Video Galleries
+<br />
+and much more!
+<br />
+<br />
+See the full list over at <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">awesome-selfhosted on Github</a>!</li>
+</ul>]]></content><author><name>Admin Penguin</name></author><category term="linux" /><category term="self-hosting" /><category term="linux" /><category term="self-hosting" /><summary type="html"><![CDATA[Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers.]]></summary></entry></feed>
