@@ -6,8 +6,6 @@ hidden: []
 sidebar:
   - article-menu
 ---
-{% include advertisements.html %}
-
 <div class="post">
   <section>
 
@@ -23,6 +21,8 @@ sidebar:
     {%- if banner == nil and result.size == 0 -%}
     {%- include views/post-header.html -%}
     {%- endif -%}
+
+    {% include advertisements.html %}
 
     {%- include views/article.html -%}
 
