@@ -4,7 +4,7 @@ title: Setup Docker on Ubuntu Server
 categories: linux
 tags: [docker, linux, ubuntu]
 banner:
-  image: https://images.unsplash.com/photo-1637778352878-f0b46d574a04?ixlib
+  image: ../assets/images/banners/docker-code.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"

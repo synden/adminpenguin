@@ -5,7 +5,7 @@ subtitle: The wonderful world of Linux
 categories: linux
 tags: [linux]
 banner:
-  image: https://images.unsplash.com/photo-1629654291663-b91ad427698f?ixlib
+  image: ../assets/images/banners/ubuntu.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"

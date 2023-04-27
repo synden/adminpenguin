@@ -5,7 +5,7 @@ subtitle: Managing users is a crucial task every Linux system administrator shou
 categories: linux
 tags: [linux,user-management]
 banner:
-  image: https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib
+  image: ../assets/images/banners/ubuntu-sudo.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"

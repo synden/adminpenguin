@@ -5,7 +5,7 @@ subtitle: Job Scheduling
 categories: linux
 tags: [linux]
 banner:
-  image: https://images.unsplash.com/photo-1549605659-32d82da3a059?ixlib
+  image: ../assets/images/banners/monitor-code.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"
