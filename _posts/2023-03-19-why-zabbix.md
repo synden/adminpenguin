@@ -5,7 +5,7 @@ subtitle: Powerful tool for network monitoring
 categories: linux monitoring
 tags: [linux, zabbix, monitoring]
 banner:
-  image: https://assets.zabbix.com/img/banners/6.0/zabbix_6_0_background_5_1920x600.jpg
+  image: ../assets/images/banners/zabbix-banner.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"

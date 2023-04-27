@@ -5,7 +5,7 @@ subtitle: The power of Bash aliases!
 categories: linux
 tags: [linux, bash]
 banner:
-  image: https://images.unsplash.com/photo-1629654291663-b91ad427698f?ixlib
+  image: ../assets/images/banners/ubuntu.png
   opacity: 0.618
   background: "#000"
   height: "70vh"

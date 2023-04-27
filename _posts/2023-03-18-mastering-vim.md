@@ -5,7 +5,7 @@ subtitle: Essential Keyboard Shortcuts
 categories: linux
 tags: [linux, vim]
 banner:
-  image: https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib
+  image: ../assets/images/banners/laptop-code.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"

@@ -5,7 +5,7 @@ subtitle: Join the wonderful world of Valheim!
 categories: linux gaming
 tags: [linux, valheim, gaming]
 banner:
-  image: https://img2.storyblok.com/fit-in/1920x1080/f/157036/1873x1051/d6fcacc246/frostcaveart.png
+  image: ../assets/images/banners/valheim-cave.png
   opacity: 0.618
   background: "#000"
   height: "70vh"

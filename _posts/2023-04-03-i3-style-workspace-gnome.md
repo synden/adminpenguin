@@ -5,7 +5,7 @@ subtitle: Give your GNOME Shell a new look with this new i3-style!
 categories: linux
 tags: [linux, gnome]
 banner:
-  image: https://149677182.v2.pressablecdn.com/wp-content/uploads/2023/04/space-bar-gnome-extension-1250x656.jpg
+  image: ../assets/images/banners/i3-style.jpg
   opacity: 0.618
   background: "#000"
   height: "70vh"

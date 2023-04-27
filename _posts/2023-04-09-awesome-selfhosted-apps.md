@@ -5,7 +5,7 @@ subtitle: Self-hosting is the practice of hosting and managing applications on y
 categories: linux self-hosting
 tags: [linux, self-hosting]
 banner:
-  image: https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib
+  image: ../assets/images/banners/code-blur.jpeg
   opacity: 0.618
   background: "#000"
   height: "70vh"
