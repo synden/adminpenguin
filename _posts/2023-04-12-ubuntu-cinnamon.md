@@ -5,7 +5,7 @@ subtitle: Featuring the Cinnamon desktop environment developed by the Linux Mint
 categories: linux
 tags: [linux, ubuntu]
 banner:
-  image: https://upload.wikimedia.org/wikipedia/commons/c/c5/Ubuntu_Cinnamon_Remix_19.10_Desktop.png
+  image: /assets/images/banners/ubuntu-cinnamon.png
   opacity: 0.618
   background: "#000"
   height: "70vh"

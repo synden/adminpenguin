@@ -5,7 +5,7 @@ subtitle: Secure remote access to shared resources
 categories: linux
 tags: [linux, ubuntu, rhel]
 banner:
-  image: https://deepsource.com/images/blog/tailscale-at-deepsource/enter-tailscale.png
+  image: /assets/images/banners/tailscale.png
   opacity: 0.618
   background: "#000"
   height: "70vh"
