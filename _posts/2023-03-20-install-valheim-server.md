@@ -15,7 +15,7 @@ banner:
 ---
 Valheim is an online multiplayer survival game that has taken the gaming world by storm. If you're a fan of the game and want to host your own Valheim server on Ubuntu, this article will guide you through the installation process.
 
-![sail_viking](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/1bde3f3288/1-sailing.jpg "Sail, Viking!")
+![sail_viking](/assets/images/banners/1-sailing.jpg "Sail, Viking!")
 
 
 ## Prerequisites
@@ -32,7 +32,7 @@ sudo apt update
 sudo apt install -y curl unzip screen lib32gcc1
 ```
 
-![valheim_monster](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/08ac0f3091/4-cultists.jpg "Monsters in the dark")
+![valheim_monster](/assets/images/banners/4-cultists.jpg "Monsters in the dark")
 
 
 ## Step 2 - Download and Install SteamCMD
@@ -90,5 +90,5 @@ For example: ```192.168.1.100:2456```
 ## Conclusion
 Congratulations! You now have a Valheim server up and running on your Ubuntu server. With this guide, you can easily install and configure your own Valheim server to enjoy the game with your friends. Remember to keep the server updated and secure by regularly installing updates and setting up firewalls. Happy gaming!
 
-![valheim_worl](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/ec2eb4f15a/11-loxriding.png "World of Valheim")
+![valheim_world](/assets/images/banners/loxriding.png "World of Valheim")
 
