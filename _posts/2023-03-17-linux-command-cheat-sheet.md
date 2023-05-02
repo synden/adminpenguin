@@ -17,9 +17,9 @@ If you're new to using the Linux command line, it can be overwhelming to remembe
 
 ## Navigation
 ```cd [directory]```: Change directory to the specified directory.<br />
-```cd ..```: Move up one directory.<br /
+```cd ..```: Move up one directory.<br />
 ```cd or cd ~```: Navigate to HOME directory.<br />
-```cd /```: Move to the root directory.<br />>
+```cd /```: Move to the root directory.<br />
 ```ls```: List the contents of the current directory.<br />
 ```ls -a```: List all files, including hidden files.<br />
 ```ls -R```: Lists files in sub-directories as well.<br />

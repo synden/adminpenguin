@@ -15,7 +15,7 @@ banner:
 ---
 Valheim is an online multiplayer survival game that has taken the gaming world by storm. If you're a fan of the game and want to host your own Valheim server on Ubuntu, this article will guide you through the installation process.
 
-![sail_viking](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/1bde3f3288/1-sailing.jpg "Sail, Viking!")
+![sail_viking](/assets/images/banners/1-sailing.jpg "Sail, Viking!")
 
 
 ## Prerequisites
@@ -43,7 +43,7 @@ During the installation if the game server user has sudo permissions LinuxGSM wi
 if vhserver is already installed run ```./vhserver install``` as root and LinuxGSM will automatically install missing dependencies. 
 
 
-![valheim_monster](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/08ac0f3091/4-cultists.jpg "Monsters in the dark")
+![valheim_monster](/assets/images/banners/4-cultists.jpg "Monsters in the dark")
 
 
 ## Installation
@@ -73,5 +73,5 @@ wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm
 ./vhserver install
 ```
 
-![valheim_worl](https://img2.storyblok.com/fit-in/1920x1080/f/157036/2560x1440/ec2eb4f15a/11-loxriding.png "World of Valheim")
+![valheim_world](/assets/images/banners/loxriding.png "World of Valheim")
 
