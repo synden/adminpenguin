@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Update Nextcloud 25 to 26
-subtitle: Upgrade your Nextcloud from version 25 to 26
+title: GE-Proton 8.1 Released
+subtitle: Newest Proton mainly pulls in Proton 8 upgrades
 categories: linux gaming
 tags: [linux, gaming proton]
 banner:
