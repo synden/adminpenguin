@@ -2,10 +2,10 @@
 layout: post
 title: Update Nextcloud 25 to 26
 subtitle: Upgrade your Nextcloud from version 25 to 26
-categories: linux self-hosting
-tags: [linux, nextcloud]
+categories: linux gaming
+tags: [linux, gaming proton]
 banner:
-  image: /assets/images/banners/nextcloud-bg.jpg
+  image: /assets/images/banners/steam.jpg
   opacity: 0.618
   background: "#000"
   height: "70vh"
@@ -13,24 +13,22 @@ banner:
   heading_style: "font-size: 3em; font-weight: bold"
   subheading_style: "color: #9580ff"
 ---
-## Update to latest minor version
-First you need to upgrade Nextcloud to the latest minor version of Nextcloud. When that's done, you can upgrade to the newest major version.
+GE-Proton has a new release out with [8-1](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-1), which is mainly pulling in a whole bunch of improvements from Proton 8 and Proton Experimental.
 
-## Prepare apps for latest version
-Before you upgrade to a new major version, you need to make the following changes to your ```appinfo/info.xml``` to allow the next version of Nextcloud for all of your apps. So for Nextcloud 26 you need the following changes to the file:
-```bash
-<dependencies>
-    <nextcloud min-version="23" max-version="26" />
-</dependencies>
-```
+This is the version of Proton made and supported by the community, for the times where it may work better than the official Valve Proton, but it comes with less testing and may have its own issues.
 
-To make the changes to all apps at the same time you could go to the root of your Nextcloud installation and run the following command:
-```bash
-sed -i -e 's/max-version="25"/max-version="26"/' apps/*/appinfo/info.xml
-```
-Here you can just change ```26``` to the newer version of Nextcloud.<br />
+Here's all that's new:
 
-## Upgrade to latest major version
-After this you can go back to the web interface and update to the latest major version of Nextcloud.
+* All build components rebased to Proton 8 experimental/upstream.
+* proton-wine updated to latest experimental.
+* wine-staging rebased on top of proton-wine 8.
+* proton-ge game patches and pending wine upstream patches rebased on top of proton-wine 8.
+* dxvk updated to latest git.
+ * vkd3d-proton updated to latest git.
+* protonfix: No cutscene audio in Daedalic Games (Memoria, The Night of the Rabbit, A New Beginning - Final Cut) - (thanks marianoag).
+* protonfix: Megadimension Neptunia VII - (thanks snaggly).
 
-Read more over at [Nextcloud](https://docs.nextcloud.com/server/latest/developer_manual/app_publishing_maintenance/app_upgrade_guide/upgrade_to_26.html#)!
+Some other notes that were included to be aware of:
+* FSR is currently disabled again. It needs a massive rebase and same as before I don't know if it's currently possible to rebase/port it over to the new proton 8 build.
+* Having the nvapi hack configuration enabled in dxvk.conf seems to crash battlenet. Recommend removing it from the config for existing Lutris battle.net installations and related games.
+* Overwatch losing focus after death seems to be fixed.

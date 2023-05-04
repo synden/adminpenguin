@@ -5,7 +5,7 @@ subtitle: Newest GE-Proton mainly pulling in Proton 8 upgrades
 categories: linux
 tags: [linux, ubuntu, rhel]
 banner:
-  image: /assets/images/banners/steam.jpg
+  image: /assets/images/banners/tailscale.png
   opacity: 0.618
   background: "#000"
   height: "70vh"
@@ -14,22 +14,54 @@ banner:
   subheading_style: "color: #9580ff"
 ---
 
-GE-Proton has a new release out with [8-1](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-1), which is mainly pulling in a whole bunch of improvements from Proton 8 and Proton Experimental.
+## Ubuntu 22.04(Jammy)
+Packages are available for x86 and ARM CPUs, in both 32-bit and 64-bit variants.
 
-This is the version of Proton made and supported by the community, for the times where it may work better than the official Valve Proton, but it comes with less testing and may have its own issues.
+* **Add package signing key and repository:**
+```bash
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+```
 
-Here's all that's new:
+* **Install Tailscale:**
+```bash
+sudo apt-get update
+sudo apt-get install tailscale
+```
 
-* All build components rebased to Proton 8 experimental/upstream.
-* proton-wine updated to latest experimental.
-* wine-staging rebased on top of proton-wine 8.
-* proton-ge game patches and pending wine upstream patches rebased on top of proton-wine 8.
-* dxvk updated to latest git.
- * vkd3d-proton updated to latest git.
-* protonfix: No cutscene audio in Daedalic Games (Memoria, The Night of the Rabbit, A New Beginning - Final Cut) - (thanks marianoag).
-* protonfix: Megadimension Neptunia VII - (thanks snaggly).
+* **Connect your machine to your Tailscale network and authenticate in your browser:**
+```bash
+sudo tailscale up
+```
 
-Some other notes that were included to be aware of:
-* FSR is currently disabled again. It needs a massive rebase and same as before I don't know if it's currently possible to rebase/port it over to the new proton 8 build.
-* Having the nvapi hack configuration enabled in dxvk.conf seems to crash battlenet. Recommend removing it from the config for existing Lutris battle.net installations and related games.
-* Overwatch losing focus after death seems to be fixed.
+* **You're connected! You can find your Tailscale IPv4 address by running:**
+```bash
+tailscale ip -4
+```
+<br />
+If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
+
+
+## CentOS 8/RHEL
+* **Add the Tailscale repository and install Tailscale:**
+```bash
+sudo dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/8/tailscale.repo
+sudo dnf install tailscale
+```
+
+* **Use systemctl to enable and start the service:**
+```bash
+sudo systemctl enable --now tailscaled
+```
+
+* **Connect your machine to your Tailscale network and authenticate in your browser:**
+```bash
+sudo tailscale up
+```
+
+* **You're connected! You can find your Tailscale IPv4 address by running:**
+```bash
+tailscale ip -4
+```
+<br />
+If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
