@@ -3,7 +3,7 @@ layout: post
 title: GE-Proton 8.1 Released
 subtitle: Newest Proton mainly pulls in Proton 8 upgrades
 categories: linux gaming
-tags: [linux, gaming proton]
+tags: [linux, gaming, proton]
 banner:
   image: /assets/images/banners/steam.jpg
   opacity: 0.618
