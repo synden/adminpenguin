@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GE-Proton 8-1 Released!
-subtitle: Newest GE-Proton mainly pulling in Proton 8 upgrades
+title: Install Tailscale
+subtitle: Tailscale is a zero config VPN for building secure networks
 categories: linux
-tags: [linux, ubuntu, rhel]
+tags: [linux, vpn]
 banner:
   image: /assets/images/banners/tailscale.png
   opacity: 0.618
