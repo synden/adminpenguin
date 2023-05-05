@@ -42,7 +42,7 @@ timezone: Europe/Stockholm
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Pure Awesome Work (cleft) 2017-{currentYear} {author}"
+copyright: "Pure Awesome Work (cleft) 2022-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to a little site about Linux, self-hosting, gaming and some other good stuff!
