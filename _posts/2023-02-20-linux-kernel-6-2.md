@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux Kernel 6.2 now out
-subtitle: Torvalds: "Give it some test love!"
+subtitle: Torvalds "Give it some test love!"
 categories: linux
 tags: [linux, kernel]
 banner:
