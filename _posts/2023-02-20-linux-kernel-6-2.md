@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Linux Kernel 6.2 now out!
+title: Linux Kernel 6.2 now out
 subtitle: Torvalds: "Give it some test love!"
 categories: linux
-tags: [linux]
+tags: [linux, kernel]
 banner:
   image: ../assets/images/banners/tux-code.jpg
   opacity: 0.618
