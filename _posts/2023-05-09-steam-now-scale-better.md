@@ -25,7 +25,7 @@ The update also fixed issues with download rate display, cursor position in game
 
 In conclusion, the new design of Steam is starting to feel more stable now, as Valve has fixed many of the issues that came along with the recent major Beta upgrade. It is good to see that Valve is continuously working on improving the Steam Client and addressing user concerns.
 
-Overview of some of the changes:
+Overview of some of the changes:<br />
  **General**
 * Fixed issues with navigating forward and back when the client's start page is the Library
 * Tweaked the order and presentation of some items in the account menu
@@ -36,20 +36,20 @@ Overview of some of the changes:
 * Changed default display of download rate to bits per second.
 * LED Personalization now has has dedicated sub-page in Controller Calibration page
  * Fixed issue where the cursor position would be reset in Game Notes after auto-saving
-
+<br />
 **Friends List**
 * Fixed Send Trade Offer opening in the system browser
 * Fixed Add to Favorites / Remove from Favorites not dismissing the context menu in some instances
-
+<br />
 **Screenshot Manager**
 * Fixed screenshots failing to upload when certain privacy settings were selected
  * Fixed UI glitch when deleting a local screenshot's caption
-
+<br />
 **In-Game Overlay**
 * Added cloud sync status icon to Game Notes dialog. If there's a Steam Cloud conflict, clicking on that icon will display a cloud conflict resolution dialog.
 * Fixed issue with Friends List context menu items not opening links in the overlay web browser (e.g. "View Profile" or "Send Trade Offer")
 * Fixed issue where some dialogs were not appearing correctly (e.g. Invite Friend to Game, Add Friend, etc.)
-
+<br />
 **Linux**
 * Fixed the file picker dialog not showing any files when browsing for an app icon
 * Fixed the Steam Runtime info dialog not showing any information
