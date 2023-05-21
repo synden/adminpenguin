@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Over The Wire - Bandit Walkthrough
+title: Over The Wire - Bandit Walkthrough Level 0-13
 subtitle: Little documentation of how I completed Bandit
 categories: linux 
 tags: [linux, ctf]
