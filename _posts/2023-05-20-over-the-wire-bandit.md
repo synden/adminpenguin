@@ -39,8 +39,7 @@ cat readme
 <br />
 
 ## Level 1-2
-**Task:** The password for the next level is stored in a file called **-** located in the home directory.
-
+**Task:** The password for the next level is stored in a file called **-** located in the home directory.<br />
 **Connect:** ```ssh bandit1@bandit.labs.overthewire.org -p 2220```
 
 Also here we run a simple command. But a slight change due to it's a dashed filename:
@@ -51,8 +50,7 @@ cat < -
 <br />
 
 ## Level 2-3
-**Task:** The password for the next level is stored in a file called **spaces in this filename** located in the home directory.
-
+**Task:** The password for the next level is stored in a file called **spaces in this filename** located in the home directory.<br />
 **Connect:** ```ssh bandit2@bandit.labs.overthewire.org -p 2220```
 
 Now comes the part where we have to read the file. As the file is named spaces in this filename, we won’t be able to read it simply by cat command. You can just write out ```cat spaces``` and then press the TAB-key to auto complete the word.
@@ -66,8 +64,7 @@ cat 'spaces in this filename'
 <br />
 
 ## Level 3-4
-**Task:** he password for the next level is stored in a hidden file in the **inhere** directory.
-
+**Task:** he password for the next level is stored in a hidden file in the **inhere** directory.<br />
 **Connect:** ```ssh bandit3@bandit.labs.overthewire.org -p 2220```
 
 First ```cd``` into the **inhere** folder and the run ```ls -lah```to show all files, even the hidden files. You will see a file called ```.hidden```.<br />
@@ -76,7 +73,7 @@ Now just run ```cat .hidden``` and you will get the password.
 <br />
 
 ## Level 4-5
-**Task:** The password for the next level is stored in the only human-readable file in the **inhere** directory. **Tip:** if your terminal is messed up, try the ```reset``` command.
+**Task:** The password for the next level is stored in the only human-readable file in the **inhere** directory. **Tip:** if your terminal is messed up, try the ```reset``` command.<br />
 **Connect:** ```ssh bandit4@bandit.labs.overthewire.org -p 2220```
 
 Here there are 10 files to look through. On this one you can go at it in different ways.
@@ -179,8 +176,7 @@ fi
 **```-n```** is a unary operator that checks if the ```$password_file``` string is non-empty.
 
 ## Level 7-8
-The password for the next level is stored in the file ```data.txt``` next to the word **millionth**.
-
+The password for the next level is stored in the file ```data.txt``` next to the word **millionth**.<br />
 **Connect:** ```ssh bandit7@bandit.labs.overthewire.org -p 2220```
 
 This one also is very simple. Just a simple ```grep millionth data.txt``` and you will find the password. The command will search for the word **millionth** inside the file **data.txt**.
@@ -188,8 +184,7 @@ This one also is very simple. Just a simple ```grep millionth data.txt``` and yo
 <br />
 
 ## Level 8-9
-**Task:** The password for the next level is stored in the file **data.txt** and is the only line of text that occurs only once.
-
+**Task:** The password for the next level is stored in the file **data.txt** and is the only line of text that occurs only once.<br />
 **Connect:** ```ssh bandit8@bandit.labs.overthewire.org -p 2220```
 
 Here I ran:
@@ -203,8 +198,7 @@ sort data.txt | uniq- u
 <br />
 
 ## Level 9-10
-**Task:** The password for the next level is stored in the file **data.txt** in one of the few human-readable strings, preceded by several **‘=’** characters.
-
+**Task:** The password for the next level is stored in the file **data.txt** in one of the few human-readable strings, preceded by several **‘=’** characters.<br />
 **Connect:** ```ssh bandit9@bandit.labs.overthewire.org -p 2220```
 
 We are hinted that the password is followed by several ‘=’ characters. Now if we are to use the cat command our screen would be filled with unreadable mesh. So, to get a more refined approach we are going to use strings command which prints character sequences that are at least 4 characters long. And to get to the exact location of the password, we are going to use grep. This gives us the password for the next level.
@@ -215,8 +209,7 @@ strings data.txt | grep =
 <br />
 
 ## Level 10-11
-**Task:** The password for the next level is stored in the file **data.txt**, which contains base64 encoded data.
-
+**Task:** The password for the next level is stored in the file **data.txt**, which contains base64 encoded data.<br />
 **Connect:** ```ssh bandit10@bandit.labs.overthewire.org -p 2220```
 
 On this level you can just run:
@@ -232,8 +225,7 @@ cat data.txt | base64 --decode
 
 
 ## Level 11-12
-**Task:** The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions.
-
+**Task:** The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions.<br />
 **Connect:** ```ssh bandit11@bandit.labs.overthewire.org -p 2220```
 
 One this one I had to search around how to solve something like this. I have never done a task like this before. So it was a learning experience.
@@ -253,8 +245,7 @@ This ```tr``` command is something I need to learn more about. You can also read
 
 
 ## Level 12-13
-**Task:** The password for the next level is stored in the file **data.txt**, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: ```mkdir /tmp/myname123```. Then copy the datafile using ```cp```, and rename it using ```mv``` (read the manpages!).
-
+**Task:** The password for the next level is stored in the file **data.txt**, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: ```mkdir /tmp/myname123```. Then copy the datafile using ```cp```, and rename it using ```mv``` (read the manpages!).<br />
 **Connect:** ```ssh bandit12@bandit.labs.overthewire.org -p 2220```
 
 
@@ -336,8 +327,7 @@ cat data9
 Now you will get the password for the next level. 
 
 ## Level 13-14
-**Task:** The password for the next level is stored in ```/etc/bandit_pass/bandit14``` and can only be read by user ```bandit14```. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. **Note: localhost is a hostname that refers to the machine you are working on.**
-
+**Task:** The password for the next level is stored in ```/etc/bandit_pass/bandit14``` and can only be read by user ```bandit14```. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. **Note: localhost is a hostname that refers to the machine you are working on.**<br />
 **Connect:** ```ssh bandit13@bandit.labs.overthewire.org -p 2220```
 
 ```bash
