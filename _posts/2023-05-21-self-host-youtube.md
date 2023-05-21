@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Self-host your own YouTube videos
+title: Tube Archivist - Self-host your own YouTube videos
 subtitle: How I Control What Media My Kids Watch Using Tube Archivist
 categories: self-hosting
 tags: [linux, self-hosting, docker]
