@@ -335,7 +335,7 @@ Now you will get the password for the next level.
 ls
 
 # Connect to the next user with the ssh key for level 14.
-ssh bandit14@localhost -i sshkey.private
+ssh bandit14@localhost -i sshkey.private -p 2220
 ```
 
 We will continue level 14 in the next part.
